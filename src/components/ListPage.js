@@ -21,12 +21,11 @@ class ListPage extends React.Component {
     }
 
     render() {
-        const { items } = this.props.context;
         return (
             <React.Fragment>
                 <input value={this.state.itemName} onChange={this.onChange}/>
                 <button onClick={this.saveItem}> Add </button>
-                <ListComponent items={items} />
+                <ListComponent />
             </React.Fragment>
         );
     }
